@@ -45,12 +45,23 @@ h1, h2, h3, h4, h5, h6 {
 
 img, svg {
     vertical-align: none;
-  }
+}
 
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0%;
+}
 .headerApp{
   height: 10rem;
+  font-size: 2em;
+  gap:2rem;
 
 }
 .brandImg{
   height: 10rem;
+}
+.cartImg{
+    height: 3rem;
 }
