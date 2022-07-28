@@ -1,16 +1,29 @@
+import React from "react";
 import { useState } from "react";
 
-function ItemCount (){
-    let [counter, setCounter]= useState(0)
+function ItemCount ({initial,stock,onAdd}){
+    const [counter, setCounter]= useState(initial)
+
+    const sumar =()=>{
+        if(counter<stock){
+            setCounter(counter+1)
+
+        }
+    }
+    const restar =()=>{
+        if (counter>0){
+            setCounter(counter-1)
+        }
+    }
     
 
     return (
 
         <div className="container">
-
-        <h1>Productos en el Carrito {counter}</h1>
-        <button type="button" className="btn btn-light" onClick={()=>setCounter(counter-1)}>-</button>
-        <button type="button" className="btn btn-light" onClick={()=>setCounter(counter+1)}>+</button>
+        <button type="button" className="btn btn-light" onClick={restar}>-</button>
+        <span>{counter}</span>
+        <button type="button" className="btn btn-light" onClick={sumar}>+</button>
+        <button onClick={()=>onAdd(counter)}>Comprar</button>
         </div>
     )
 
