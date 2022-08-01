@@ -12,19 +12,19 @@ function ItemListContainer ({greetings}){
     
 
     useEffect(()=>{
-        console.log(data)
+        
         data
         .then((res)=> setListaProductos(res))
         .catch(()=> setMensaje('ERROR EN LA CARGA DE DATOS'))
         .finally(()=> console.log(`USO DE FINALLY`))
-      }, [])
+    }, [])
 
 
-            return(
+    return(
 
-        <div className="container"><h1>{greetings}</h1>
-        {mensaje && <p>{mensaje}</p>}
-        <ItemList listaProductos={listaProductos}/></div>
+    <div className="container"><h1>{greetings}</h1>
+    {mensaje && <p>{mensaje}</p>}
+    <ItemList listaProductos={listaProductos}/></div>
         
     )
 

@@ -23,7 +23,7 @@ function ItemCount ({initial,stock,onAdd}){
         <button type="button" className="btn btn-light" onClick={restar}>-</button>
         <span>{counter}</span>
         <button type="button" className="btn btn-light" onClick={sumar}>+</button>
-        <button onClick={()=>onAdd(counter)}>Comprar</button>
+        <button onClick={()=>onAdd(counter)}>Agregar al carrito</button>
         </div>
     )
 
