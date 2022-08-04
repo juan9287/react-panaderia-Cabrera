@@ -1,12 +1,13 @@
-
+import React from 'react'
 import ItemCount from './ItemCount'
 import swal from 'sweetalert'
+import {useNavigate} from 'react-router-dom'
  
 
 const ItemCard = ({producto}) => {
   
   const { nombre, id,precio , categoria, stock }= producto
-  
+  const navegar = useNavigate()
   const onAdd = (cantidad) => { 
     swal({
       title: "Felicitaciones",
@@ -26,8 +27,9 @@ const img = `./productos_img/producto_${id}.jpg`
         <p className="card-text">Stock:{stock}</p>
         
     </div>
-      
+      <button className='btn' onClick={()=>navegar(`/detail/${id}`)}>Ver detalle</button>
       <ItemCount initial={1} stock={stock} onAdd={onAdd}/>
+      
   </div>
 
   )
