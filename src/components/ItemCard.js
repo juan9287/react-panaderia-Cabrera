@@ -15,7 +15,7 @@ const ItemCard = ({producto}) => {
       icon: "success",
     });
   }
-const img = `./productos_img/producto_${id}.jpg`
+const img = `../productos_img/producto_${id}.jpg`
 
   return (
     <div className="col card productosItem" style={{width: '30rem'}}>

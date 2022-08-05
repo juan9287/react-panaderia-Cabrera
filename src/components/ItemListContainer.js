@@ -20,10 +20,10 @@ function ItemListContainer ({greetings}){
         data
         .then((res)=>{if(!categoriaId){setListaProductos(res)}
         else{
-            setListaProductos((res)=>res.filter((prod)=>prod.categoria===categoriaId))
+            setListaProductos(res.filter((item)=>item.categoria===categoriaId))
         }} )
         .catch(()=> setMensaje('ERROR EN LA CARGA DE DATOS'))
-        .finally(()=> console.log(`USO DE FINALLY`))
+        
     }, [categoriaId])
 
 

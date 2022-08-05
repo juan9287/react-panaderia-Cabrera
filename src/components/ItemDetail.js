@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom'
 
 export const ItemDetail = ({producto})=>{
     const {id}=producto
-    const img = `./productos_img/producto_${id}.jpg`
+    const img = `../productos_img/producto_${id}.jpg`
     const back = useNavigate()
     
 
