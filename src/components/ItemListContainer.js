@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { data } from "./mock/FakeApi"
 import ItemList from "./ItemList"
 import {useParams} from 'react-router-dom'
-import {useNavigate} from 'react-router-dom'
+
 
 
 
@@ -12,7 +12,7 @@ function ItemListContainer ({greetings}){
     const [listaProductos, setListaProductos]= useState([])
     const[mensaje, setMensaje] = useState(false)
     const {categoriaId} = useParams()
-    const navegar = useNavigate()
+    
     
 
     useEffect(()=>{
@@ -32,14 +32,7 @@ function ItemListContainer ({greetings}){
     <div className="container">
     <h1>{greetings}</h1>
     {mensaje && <p>{mensaje}</p>}
-    <nav>
-        <ul>
-        <button onClick={()=>navegar(`/categoria/Tortas`)}>Tortas</button>
-        <button onClick={()=>navegar(`/categoria/Panaderia`)}>Panaderia</button>
-        <button onClick={()=>navegar(`/categoria/Sandwiches`)}>Sandwiches</button>
-        <button onClick={()=>navegar(`/categoria/Catering`)}>Catering</button>
-        </ul>
-        </nav>
+
     <ItemList listaProductos={listaProductos}/>
     </div>
         
