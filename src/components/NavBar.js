@@ -18,12 +18,12 @@ function NavBar(){
                 
             </picture>
             
-             <ul className='navbar-nav'> 
+            <ul className='navbar-nav d-flex justify-content-between'> 
                 <li className='nav-item '><Link to ='/'>Nosotros</Link></li>
                 <li className='nav-item '><Link to ='/'>Contactanos</Link></li>
                 <li className='nav-item '><Link to ='/'>Tienda</Link></li>
                 <li className='nav-item dropdown'>
-                <p  className='nav-link dropdown-toggle' role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos </p>
+                <li  className='nav-item dropdown-toggle' data-bs-toggle="dropdown" >Productos </li>
                 <ul className='dropdown-menu'>
                 
                     <Link to ='/productos'className='dropdown-item' >Todos los productos</Link>
