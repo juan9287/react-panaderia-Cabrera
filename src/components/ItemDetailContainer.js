@@ -8,6 +8,7 @@ import {useParams} from 'react-router-dom'
 export const ItemDetailContainer = ()=>{
     const [producto,setProducto]= useState({})
     const {idProd}= useParams()
+    
     useEffect(()=>{
         data.then((res)=>setProducto(res.find((item)=>item.id===idProd)));
 
