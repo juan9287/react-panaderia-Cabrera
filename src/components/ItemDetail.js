@@ -2,21 +2,36 @@ import React, {useState} from "react"
 import {useNavigate} from 'react-router-dom'
 import ItemCount from "./ItemCount"
 import swal from 'sweetalert'
+import { useCart } from "./CartContext"
+
 
 
 export const ItemDetail = ({producto})=>{
-    const {id}=producto
+    const {id,nombre,stock,precio}=producto
     const img = `../productos_img/producto_${id}.jpg`
     const navegar = useNavigate()
     const [counter, setCounter]= useState(0)
     const [compra,setCompra]= useState(false)
+    const {addToCart} = useCart()
     const onAdd =(cantidad)=>{
+
+        let itemCarrito ={
+            id,
+            nombre,
+            img,
+            stock,
+            precio,
+            cantidad:counter,
+
+        }
+        addToCart(itemCarrito)
         swal({
             title: "Felicitaciones",
             text: `Haz agregado ${cantidad} productos a tu carrito`,
             icon: "success",
           });
         setCompra(true)
+        
     }
 
     return(
