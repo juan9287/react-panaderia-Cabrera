@@ -1,0 +1,13 @@
+.navBarApp{
+   background: $principal;
+   width: 100%;
+   height: 10rem;
+    
+   .navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    object-fit: contain;
+   }
+
+}

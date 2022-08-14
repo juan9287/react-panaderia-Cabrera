@@ -12,10 +12,10 @@ function NavBar(){
      console.log(cart)
     
     return(
-    <header className= 'headerApp'>
-        <div className='container'>
-        <nav className=' navbar navbar-expand-lg bg-light'>
-            <div className=' container-fluid'>
+    <header className= 'navBarApp'>
+        
+        <nav className=' container navbar navbar-expand-lg '>
+            <div className='navBar container-fluid navbar-default'>
             <picture className=' navbar-brand'>
                 
             <Link to ='/'><img className="brandImg" src={gorro} alt=""></img></Link>
@@ -36,15 +36,16 @@ function NavBar(){
                     <Link to='/categoria/Sandwiches' className='dropdown-item'>Sandwiches</Link>
                     <Link to='/categoria/Catering' className='dropdown-item'>Catering</Link>
                 </ul>
+                <CartWidget/>
                 </li>
             </ul>
                 
            
             
             </div>
-            <CartWidget/>
+            
         </nav>
-        </div>
+        
     </header>)
 }
 export default NavBar

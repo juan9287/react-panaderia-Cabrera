@@ -19,8 +19,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "build-sass": "node-sass --include-path scss sass/index.scss src/css/index.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
     "eject": "react-scripts eject"
-  },
+    
+  }, 
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -42,6 +45,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.8",
     "css-loader": "^6.7.1",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19",
     "postcss-loader": "^7.0.1",
     "sass": "^1.54.0",
     "sass-loader": "^13.0.2",
