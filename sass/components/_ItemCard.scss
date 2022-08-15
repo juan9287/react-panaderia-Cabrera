@@ -1,0 +1,27 @@
+.itemCard{
+    width: 30rem;
+    background: $principal;
+
+    img{
+        height: 20rem;
+    }
+
+    h1{
+        text-align: center;
+        
+    }
+
+    p{
+        font-size: 2em;
+        font-family: $font-secondary;
+        font-weight: bolder;
+    }
+
+    button{
+        font-size: 2em;
+        background-color: goldenrod;
+    }
+
+
+
+}

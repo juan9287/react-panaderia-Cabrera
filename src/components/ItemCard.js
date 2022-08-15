@@ -12,10 +12,10 @@ const ItemCard = ({producto}) => {
 const img = `../productos_img/producto_${id}.jpg`
 
   return (
-    <div className="col card productosItem" style={{width: '30rem'}}>
-    <img src={img} style={{height:'20rem'}}  className="card-img-top" alt={nombre} />
+    <div className="card itemCard" >
+    <img src={img}   className="card-img-top" alt={nombre} />
     <div className="card-body">
-        <h5 className="card-title">{nombre}</h5>
+        <h1 className="card-title" >{nombre}</h1>
         <p className="card-text">Categoria: {categoria}</p>
         <p className="card-text">Precio: ${precio}</p>
         <p className="card-text">Stock:{stock}</p>

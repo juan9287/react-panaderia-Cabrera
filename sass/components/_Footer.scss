@@ -1,0 +1,26 @@
+.footerApp{
+    background: $principal;
+    height: 10rem;
+    z-index: 1;
+    
+    .footerAppNav {
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .footerAppList{
+            height: 5rem;
+            display: flex;
+            flex-direction: row;
+            flex-basis: 50%;
+            justify-content: space-between;
+
+            .footerAppListItem  img{
+                height: 5rem;
+            }
+        }    
+    }
+
+}

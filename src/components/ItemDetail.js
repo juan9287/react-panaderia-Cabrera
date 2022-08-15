@@ -35,18 +35,24 @@ export const ItemDetail = ({producto})=>{
     }
 
     return(
-        <>
-        <div>
-            <img src={img} style={{width:"30rem"}} alt={producto.nombre}  ></img>
+        <div className="itemDetail container">
+        
+        <div className="itemDetailCard"> 
+            <picture><img src={img}  alt={producto.nombre} ></img></picture>
+
+            <div>
             <h1>{producto.nombre}</h1>
             <p >{producto.categoria}</p>
             <p >${producto.precio}</p>
             <p >stock:{producto.stock}</p>
+            {compra ? <button onClick={()=>navegar('/cart')}>Ir al Carrito</button>:
+            <ItemCount stock={producto.stock} counter={counter} setCounter={setCounter} onAdd={onAdd}></ItemCount>}
+            <button className="btn" onClick={()=> navegar('/productos')}>Volver al listado</button>
+            </div>
+            
         </div>
-       {compra ? <button onClick={()=>navegar('/cart')}>Ir al Carrito</button>:
-        <ItemCount stock={producto.stock} counter={counter} setCounter={setCounter} onAdd={onAdd}></ItemCount>}
-        <button className="btn" onClick={()=> navegar('/productos')}>Volver al listado</button> 
-        </>
+        
+        </div>
     )
 
 }

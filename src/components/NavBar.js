@@ -14,7 +14,7 @@ function NavBar(){
     return(
     <header className= 'navBarApp'>
         
-        <nav className=' container navbar navbar-expand-lg '>
+        <nav className=' container navBar navbar navbar-expand-lg '>
             <div className='navBar container-fluid navbar-default'>
             <picture className=' navbar-brand'>
                 
@@ -22,13 +22,13 @@ function NavBar(){
                 
             </picture>
             
-            <ul className='navbar-nav d-flex justify-content-between'> 
+            <ul className='navbar-nav navBarLinks'> 
                 <li className='nav-item '><Link to ='/'>Nosotros</Link></li>
                 <li className='nav-item '><Link to ='/'>Contactanos</Link></li>
                 <li className='nav-item '><Link to ='/'>Tienda</Link></li>
                 <li className='nav-item dropdown'>
                 <li  className='nav-item dropdown-toggle' data-bs-toggle="dropdown" >Productos </li>
-                <ul className='dropdown-menu'>
+                <ul className='navBarDropdown dropdown-menu'>
                 
                     <Link to ='/productos'className='dropdown-item' >Todos los productos</Link>
                     <Link to='/categoria/Tortas' className='dropdown-item'>Tortas</Link>
@@ -36,8 +36,9 @@ function NavBar(){
                     <Link to='/categoria/Sandwiches' className='dropdown-item'>Sandwiches</Link>
                     <Link to='/categoria/Catering' className='dropdown-item'>Catering</Link>
                 </ul>
-                <CartWidget/>
+                
                 </li>
+                <CartWidget/>
             </ul>
                 
            

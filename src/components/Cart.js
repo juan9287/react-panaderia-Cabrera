@@ -1,5 +1,6 @@
 import { useCart } from "./CartContext"
 import { CartItem } from "./CartItem"
+import { EmptyCart } from "./EmptyCart"
 
 
 export const Cart = () =>{
@@ -8,7 +9,7 @@ export const Cart = () =>{
    
     return(
        <>   {!cart.length?
-       <div>NO CART</div>:<>
+       <div><EmptyCart></EmptyCart></div>:<>
         <div>{cart.map((art)=><CartItem key={art.id} producto={art}></CartItem>)}</div>
         <h2>Total ${totalCarrito}</h2>
         <button onClick={vaciarCarrito}>Vaciar Carrito</button> </>

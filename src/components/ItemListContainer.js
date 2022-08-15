@@ -30,7 +30,7 @@ function ItemListContainer ({greetings}){
     return(
 
     <div className="container">
-    <h1>{greetings}</h1>
+    <h1 style={{"text-align":"center", "padding-top":"2rem", "fontSize":"4em"}}>{greetings}</h1>
     {mensaje && <p>{mensaje}</p>}
 
     <ItemList listaProductos={listaProductos}/>

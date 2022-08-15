@@ -2,12 +2,35 @@
    background: $principal;
    width: 100%;
    height: 10rem;
-    
+    z-index: 1;
    .navBar{
+    height: inherit;  
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     object-fit: contain;
+
+    .cartImg{
+      height: 5rem;
+    }
+    img{
+      height: 10rem;
+
+    }
+    .navBarLinks{
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: map-get($font-size, large);
+      align-items: center;
+
+      .navBarDropdown{
+         font-size: 0.7em;
+      }
+
+      
+    }
    }
 
 }
