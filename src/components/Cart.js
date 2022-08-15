@@ -11,7 +11,7 @@ export const Cart = () =>{
        <>   {!cart.length?
        <div className="emptyCart"><EmptyCart></EmptyCart></div>:<>
         <div className="cart">{cart.map((art)=><CartItem key={art.id} producto={art}></CartItem>)}</div>
-        <h2>Total ${totalCarrito}</h2>
+        <h2>Total ${totalCarrito()}</h2>
         <button onClick={vaciarCarrito}>Vaciar Carrito</button> </>
         }
 
