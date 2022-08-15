@@ -142,9 +142,38 @@ ol, ul {
     background-color: goldenrod; }
 
 .itemDetail {
-  justify-content: center;
-  align-items: center;
-  height: 100%; }
+  display: flex;
+  height: 100%;
+  width: 50%; }
   .itemDetail .itemDetailCard {
-    display: grid;
-    grid-template-columns: auto auto; }
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-self: center;
+    gap: 2rem; }
+    .itemDetail .itemDetailCard .itemDetailPicture {
+      flex-basis: 50%;
+      align-items: center;
+      height: 80%; }
+      .itemDetail .itemDetailCard .itemDetailPicture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .itemDetail .itemDetailCard .itemDetailText {
+      text-align: center;
+      flex-basis: 50%; }
+      .itemDetail .itemDetailCard .itemDetailText p {
+        font-size: medium; }
+      .itemDetail .itemDetailCard .itemDetailText .navBtn {
+        font-size: medium;
+        width: 50%;
+        height: 4rem;
+        background-color: darkgoldenrod;
+        border: 1px solid black; }
+      .itemDetail .itemDetailCard .itemDetailText .itemCount {
+        padding: 1px;
+        font-size: medium; }
+        .itemDetail .itemDetailCard .itemDetailText .itemCount .btnQty {
+          font-size: medium; }

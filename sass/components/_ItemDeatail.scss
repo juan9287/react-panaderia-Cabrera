@@ -1,12 +1,57 @@
 .itemDetail{
+    display: flex;
 
-    justify-content: center;
-    align-items: center;
     height: 100%;
+    width: 50%;
 
     .itemDetailCard{
         
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+       align-self: center;
+       gap:2rem;
+
+        .itemDetailPicture{
+           flex-basis:50%;
+           align-items: center;
+           height: 80%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .itemDetailText{
+            text-align:center;
+            flex-basis: 50%;
+            
+
+            p{
+                font-size: medium;
+            }
+            
+           .navBtn{
+            font-size:medium;
+            width: 50%;
+            height: 4rem;
+            background-color:darkgoldenrod;
+            border: 1px solid black;
+           }
+           .itemCount{
+            padding:1px;
+            font-size: medium;
+
+            .btnQty{
+                font-size: medium;
+            }
+           }
+
+
+        }
 
 }}

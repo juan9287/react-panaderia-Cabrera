@@ -3,7 +3,7 @@ import {useCart} from './CartContext'
 export const CartItem=({producto})=>{
     const{eliminarItem}=useCart()
     return(
-        <div>
+        <div className='cartItem'>
             <h4>{producto.nombre}</h4>
             <img src= {producto.img} alt={producto.nombre}></img>
             <p>{producto.precio}</p>

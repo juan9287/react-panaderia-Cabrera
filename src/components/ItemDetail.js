@@ -38,16 +38,16 @@ export const ItemDetail = ({producto})=>{
         <div className="itemDetail container">
         
         <div className="itemDetailCard"> 
-            <picture><img src={img}  alt={producto.nombre} ></img></picture>
+            <picture className="itemDetailPicture"><img src={img}  alt={producto.nombre} ></img></picture>
 
-            <div>
+            <div className="itemDetailText">
             <h1>{producto.nombre}</h1>
             <p >{producto.categoria}</p>
             <p >${producto.precio}</p>
             <p >stock:{producto.stock}</p>
-            {compra ? <button onClick={()=>navegar('/cart')}>Ir al Carrito</button>:
+            {compra ? <button className="btn navBtn" onClick={()=>navegar('/cart')}>Ir al Carrito</button>:
             <ItemCount stock={producto.stock} counter={counter} setCounter={setCounter} onAdd={onAdd}></ItemCount>}
-            <button className="btn" onClick={()=> navegar('/productos')}>Volver al listado</button>
+            <button className="btn navBtn" onClick={()=> navegar('/productos')}>Volver al listado</button>
             </div>
             
         </div>
