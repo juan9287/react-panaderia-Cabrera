@@ -4,11 +4,11 @@ export const CartItem=({producto})=>{
     const{eliminarItem}=useCart()
     return(
         <div className='cartItem'>
-            <h4>{producto.nombre}</h4>
             <img src= {producto.img} alt={producto.nombre}></img>
+            <h4>{producto.nombre}</h4>
             <p>{producto.precio}</p>
             <p>{producto.cantidad}</p>
-            <button onClick={()=>eliminarItem(producto.id)}>Eliminar producto</button>
+            <button className='btn' onClick={()=>eliminarItem(producto.id)}>Eliminar producto</button>
         </div>
     )
 }

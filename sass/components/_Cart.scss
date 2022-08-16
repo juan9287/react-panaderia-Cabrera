@@ -1,0 +1,18 @@
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ .cartItem{
+    display: flex;
+    flex-direction: row;
+    gap:3rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    img{
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+    }
+ }
+}

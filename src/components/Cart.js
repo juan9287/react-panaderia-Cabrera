@@ -8,13 +8,17 @@ export const Cart = () =>{
     const {cart,vaciarCarrito,totalCarrito}=useCart()
    
     return(
-       <>   {!cart.length?
-       <div className="emptyCart"><EmptyCart></EmptyCart></div>:<>
-        <div className="cart">{cart.map((art)=><CartItem key={art.id} producto={art}></CartItem>)}</div>
+       <div>{!cart.length?
+       <div className="emptyCart"><EmptyCart></EmptyCart></div>
+       :<div className="cart container">
+        
+        {cart.map((art)=><CartItem key={art.id} producto={art}></CartItem>)}
+        
         <h2>Total ${totalCarrito()}</h2>
-        <button onClick={vaciarCarrito}>Vaciar Carrito</button> </>
+        <button className="btn" onClick={vaciarCarrito}>Vaciar Carrito</button> 
+        </div>
         }
 
-     </> 
+     </div> 
     )
 }
