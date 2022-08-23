@@ -7,13 +7,13 @@ function Home() {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner slider__content ">
-          <di   className="carousel-item active">
+          <div   className="carousel-item active">
             <img
               src="../Imagenes/slide1.jpg"
               alt="Imagen panaderia"
             className="d-block "
             />
-          </di>
+          </div>
           <di   className="carousel-item">
             <img
               src="../Imagenes/slide2.jpg"
@@ -21,34 +21,34 @@ function Home() {
             className="d-block"
             />
           </di>
-          <di   className="carousel-item">
+          <div   className="carousel-item">
             <img
               src="../Imagenes/slide3.jpg"
               alt="Imagen panaderia"
             className="d-block"
             />
-          </di>
-          <di   className="carousel-item ">
+          </div>
+          <div   className="carousel-item ">
             <img
               src="../Imagenes/slide4.jpg"
               alt="Imagen panaderia"
             className="d-block "
             />
-          </di>
-          <di   className="carousel-item">
+          </div>
+          <div   className="carousel-item">
             <img
               src="../Imagenes/slide5.jpg"
               alt="Imagen panaderia"
             className="d-block"
             />
-          </di>
-          <di   className="carousel-item">
+          </div>
+          <div   className="carousel-item">
             <img
               src="../Imagenes/slide6.jpg"
               alt="Imagen panaderia"
             className="d-block"
             />
-          </di>
+          </div>
         </div>
       </div>
 
@@ -59,7 +59,7 @@ function Home() {
           data-bs-target="#carousel_panaderia"
           data-bs-slide="prev"
         >
-          <spa  className="carousel-control-prev-icon"></spa>
+          <span  className="carousel-control-prev-icon"></span>
         </button>
         <button
         className="carousel-control-next"

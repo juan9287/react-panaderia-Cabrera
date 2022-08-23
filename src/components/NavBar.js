@@ -3,14 +3,10 @@ import React from 'react'
 import gorro from '../Imagenes/gorro.png'
 import CartWidget from './CartWidget'
 import {Link} from 'react-router-dom'
-import {useCart} from './CartContext'
+
 
 function NavBar(){
 
-
-    const {cart}= useCart()
-     console.log(cart)
-    
     return(
     <header className= 'navBarApp'>
         

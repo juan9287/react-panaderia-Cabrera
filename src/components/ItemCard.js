@@ -1,15 +1,17 @@
 
 
 
+
 import {useNavigate} from 'react-router-dom'
+
  
 
 const ItemCard = ({producto}) => {
   
-  const { nombre, id,precio , categoria, stock }= producto
+  const { nombre, id,precio , categoria, stock,img }= producto
   const navegar = useNavigate()
-
-const img = `../productos_img/producto_${id}.jpg`
+  
+ 
 
   return (
     <div className="card itemCard" >

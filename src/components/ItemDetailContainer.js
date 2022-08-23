@@ -1,8 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { data } from "./mock/FakeApi";
+
 import { ItemDetail } from "./ItemDetail";
 import {useParams} from 'react-router-dom'
+import { collection, doc, getDoc} from "firebase/firestore";
+import { db } from "../firebase/Firebase";
 
 
 export const ItemDetailContainer = ()=>{
@@ -10,9 +12,18 @@ export const ItemDetailContainer = ()=>{
     const {idProd}= useParams()
     
     useEffect(()=>{
-        data.then((res)=>setProducto(res.find((item)=>item.id===idProd)));
+        //data.then((res)=>setProducto(res.find((item)=>item.id===idProd)));
+        const colleccion = collection(db, "Items")
+        const ref = doc(colleccion,idProd)
+        getDoc(ref).then((ref)=>{
+            setProducto({
+                id:ref.id,
+                ...ref.data()
+            })
+        }
 
-    },[idProd])
+        )
+    },[idProd]) 
 
     return(
         <div>

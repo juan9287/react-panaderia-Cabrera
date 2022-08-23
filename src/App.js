@@ -10,6 +10,8 @@ import {CartProvider} from './components/CartContext'
 import { Footer } from './components/Footer';
 
 function App() {
+
+
   return (
     <CartProvider>
     <BrowserRouter>

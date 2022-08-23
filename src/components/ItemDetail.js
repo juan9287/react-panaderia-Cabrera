@@ -7,8 +7,8 @@ import { useCart } from "./CartContext"
 
 
 export const ItemDetail = ({producto})=>{
-    const {id,nombre,stock,precio}=producto
-    const img = `../productos_img/producto_${id}.jpg`
+    const {id,nombre,stock,precio,img }=producto
+    
     const navegar = useNavigate()
     const [counter, setCounter]= useState(0)
     const [compra,setCompra]= useState(false)
@@ -38,7 +38,7 @@ export const ItemDetail = ({producto})=>{
         <div className="itemDetail container">
         
         <div className="itemDetailCard"> 
-            <picture className="itemDetailPicture"><img src={img}  alt={producto.nombre} ></img></picture>
+            <picture className="itemDetailPicture"><img src={producto.img}  alt={producto.nombre} ></img></picture>
 
             <div className="itemDetailText">
             <h1>{producto.nombre}</h1>
