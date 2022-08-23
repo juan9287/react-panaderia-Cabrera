@@ -23,17 +23,22 @@ export const Checkout = ()=>{
 
     const finalizarCompra =(e)=>{
         e.preventDefault()
-        const colleccionCompra = collection (db,"Compras")
+        if(Object.values(cliente).length !==3){
+            alert( "GENIO PONE LA DATA SINO NO PODES COMPRAR")
+        }
+        else{
+            const colleccionCompra = collection (db,"Compras")
         addDoc(colleccionCompra, {
             cliente,
             items: cart,
             total: totalCarrito(),
             fecha: serverTimestamp(),
     })
-    .then((res)=>{
+        .then((res)=>{
         setOrderId(res.id)
         vaciarCarrito()
     })
+        }
     }
     return (
     <>
