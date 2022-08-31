@@ -19,7 +19,7 @@ function NavBar(){
             </picture>
             
             <ul className='navbar-nav navBarLinks'> 
-                <li className='nav-item '><Link to ='/'>Nosotros</Link></li>
+                <li className='nav-item '><Link to ='/nosotros'>Nosotros</Link></li>
                 <li className='nav-item '><Link to ='/'>Contactanos</Link></li>
                 <li className='nav-item '><Link to ='/'>Tienda</Link></li>
                 <li className='nav-item dropdown'>

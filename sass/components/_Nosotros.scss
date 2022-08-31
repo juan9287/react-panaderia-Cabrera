@@ -1,0 +1,45 @@
+.titleCb{
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+.mainNosotros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:2rem;
+    height: 100%;
+    justify-self: center;
+    
+    
+
+    .mainNosotrosImg{
+        flex-basis: 50%;
+        height: 80%;
+        width: 40%;
+
+        img{
+            height: 100%;
+            width: 100%;
+        };
+    }
+    .mainNosotrosText{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        height: 100%;
+        font-family: $font-secondary;
+        font-weight: bolder;
+        font-style: $principal;
+        font-size: medium;
+        justify-content: center;
+
+        .mainNosotrosHistoria{
+            text-align: center;
+            
+        }
+       
+
+
+    }
+}
