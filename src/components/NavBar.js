@@ -20,10 +20,10 @@ function NavBar(){
             
             <ul className='navbar-nav navBarLinks'> 
                 <li className='nav-item '><Link to ='/nosotros'>Nosotros</Link></li>
-                <li className='nav-item '><Link to ='/'>Contactanos</Link></li>
-                <li className='nav-item '><Link to ='/'>Tienda</Link></li>
+                <li className='nav-item '><Link to ='/contactanos'>Contactanos</Link></li>
+                <li className='nav-item '><Link to ='/galeria'>Productos</Link></li>
                 <li className='nav-item dropdown'>
-                <li  className='nav-item dropdown-toggle' data-bs-toggle="dropdown" >Productos </li>
+                <li  className='nav-item dropdown-toggle' data-bs-toggle="dropdown" style={{"cursor":"pointer"}}>Tienda</li>
                 <ul className='navBarDropdown dropdown-menu'>
                 
                     <Link to ='/productos'className='dropdown-item' >Todos los productos</Link>

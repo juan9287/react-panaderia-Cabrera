@@ -1,0 +1,53 @@
+.galeriaProductos{
+    height: 90%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 45% 45%;
+    grid-template-areas: "pan cat cat"
+                         "pan con tor"
+    ;
+    justify-content: space-around;
+    align-content: space-around;
+    align-self: center;
+
+    .pan{
+        grid-area: pan;
+    }
+    .cat{
+        grid-area: cat;
+    }
+    .con{
+        grid-area: con;
+    }
+    .tor{
+        grid-area: tor;
+    }
+
+    .galeriaItem{
+    
+       
+        h2{
+            
+            
+            position: relative;
+           text-align: center;
+           bottom: 5rem;
+           left: 2rem;
+           font-size: 3rem;
+           border-radius: 1rem;
+           background-color: $principal;
+           width: fit-content;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 2rem;
+            
+    }}
+   
+
+    
+
+  
+}

@@ -233,3 +233,92 @@ ol, ul {
     justify-content: center; }
     .mainNosotros .mainNosotrosText .mainNosotrosHistoria {
       text-align: center; }
+
+.mainContactanos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Bebas Neue", cursive; }
+  .mainContactanos h1 {
+    font-size: 4em;
+    font-weight: bolder; }
+  .mainContactanos .infoFormDiv {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    gap: 2rem; }
+    .mainContactanos .infoFormDiv h3 {
+      font-weight: bold;
+      font-size: 3em; }
+    .mainContactanos .infoFormDiv .informacionContacto {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      height: 80%; }
+      .mainContactanos .infoFormDiv .informacionContacto p {
+        font-size: 2em; }
+      .mainContactanos .infoFormDiv .informacionContacto iframe {
+        height: 100%;
+        width: 100%; }
+    .mainContactanos .infoFormDiv .formContacto {
+      font-size: 2em;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      flex-basis: 50%;
+      justify-content: space-between;
+      height: 80%; }
+      .mainContactanos .infoFormDiv .formContacto input {
+        font-size: 1em;
+        height: 4rem; }
+      .mainContactanos .infoFormDiv .formContacto textarea {
+        height: 100%;
+        font-size: 1em; }
+
+.emptyCart {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .emptyCart img {
+    width: 300px;
+    height: 300px; }
+  .emptyCart h1 {
+    font-size: 6em; }
+  .emptyCart h3 {
+    padding-top: 2rem;
+    font-size: 4em; }
+
+.galeriaProductos {
+  height: 90%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 45% 45%;
+  grid-template-areas: "pan cat cat" "pan con tor";
+  justify-content: space-around;
+  align-content: space-around;
+  align-self: center; }
+  .galeriaProductos .pan {
+    grid-area: pan; }
+  .galeriaProductos .cat {
+    grid-area: cat; }
+  .galeriaProductos .con {
+    grid-area: con; }
+  .galeriaProductos .tor {
+    grid-area: tor; }
+  .galeriaProductos .galeriaItem h2 {
+    position: relative;
+    text-align: center;
+    bottom: 5rem;
+    left: 2rem;
+    font-size: 3rem;
+    border-radius: 1rem;
+    background-color: rgba(242, 237, 229, 0.5);
+    width: fit-content; }
+  .galeriaProductos .galeriaItem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem; }
