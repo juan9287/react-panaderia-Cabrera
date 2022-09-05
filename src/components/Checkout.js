@@ -4,7 +4,7 @@ import { useState } from "react"
 import { db } from "../firebase/Firebase"
 import { useCart } from "./CartContext"
 
-
+import swal from "sweetalert"
 
 
 
@@ -24,7 +24,12 @@ export const Checkout = ()=>{
     const finalizarCompra =(e)=>{
         e.preventDefault()
         if(Object.values(cliente).length !==3){
-            alert( "GENIO PONE LA DATA SINO NO PODES COMPRAR")
+            swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                footer: '<a href="">Why do I have this issue?</a>'
+              })
         }
         else{
             const colleccionCompra = collection (db,"Compras")
