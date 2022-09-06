@@ -14,13 +14,13 @@ function Home() {
             className="d-block "
             />
           </div>
-          <di   className="carousel-item">
+          <div   className="carousel-item">
             <img
               src="../Imagenes/slide2.jpg"
               alt="Imagen panaderia"
             className="d-block"
             />
-          </di>
+          </div>
           <div   className="carousel-item">
             <img
               src="../Imagenes/slide3.jpg"
@@ -67,7 +67,7 @@ function Home() {
           data-bs-target="#carousel_panaderia"
           data-bs-slide="next"
         >
-          <spa  className="carousel-control-next-icon"></spa>
+          <span  className="carousel-control-next-icon"></span>
         </button>
 
         <picture className="picture">

@@ -315,3 +315,36 @@ ol, ul {
     width: 100%;
     object-fit: cover;
     border-radius: 2rem; }
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: large; }
+  .checkout .formCheckout {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    height: 80%; }
+    .checkout .formCheckout button {
+      font-size: 1em;
+      align-self: flex-end;
+      width: fit-content; }
+    .checkout .formCheckout input {
+      font-size: 1em;
+      height: 4rem; }
+
+.compraFinalizada {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  font-size: large !important;
+  font-weight: bolder !important; }
+  .compraFinalizada button {
+    width: fit-content;
+    font-size: 1em; }
