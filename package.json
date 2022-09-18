@@ -21,6 +21,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "build-sass": "node-sass --include-path scss sass/index.scss src/css/index.css",
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
