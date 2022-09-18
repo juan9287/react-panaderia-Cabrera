@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a644b3d6.css",
+    "main.js": "/static/js/main.1e2802c9.js",
+    "static/media/gorro.png": "/static/media/gorro.0bba9efe2aeab257f43f.png",
+    "static/media/shopping-cart.png": "/static/media/shopping-cart.96c73cb49987ccdf1154.png",
+    "index.html": "/index.html",
+    "main.a644b3d6.css.map": "/static/css/main.a644b3d6.css.map",
+    "main.1e2802c9.js.map": "/static/js/main.1e2802c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a644b3d6.css",
+    "static/js/main.1e2802c9.js"
+  ]
+}
